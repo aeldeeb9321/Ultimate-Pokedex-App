@@ -52,10 +52,7 @@ class MoreInfoController: UIViewController{
     private func animateInfoView(){
         UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: .curveEaseInOut) {
             self.infoView.frame.origin.y = 325
-        } completion: { _ in
-            
         }
-
     }
     
     //MARK: - Selectors

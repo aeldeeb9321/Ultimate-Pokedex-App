@@ -90,7 +90,7 @@ class InfoView: UIView{
         view.setDimensions(height: 17, width: 175)
         view.layer.cornerRadius = 6
         view.addSubview(defenseChart)
-        defenseChart.anchor(top: view.topAnchor, leading: view.leadingAnchor, bottom: view.bottomAnchor, trailing: view.trailingAnchor, paddingTrailing: (pokemon.defense < 175) ? CGFloat(175 - (pokemon.defense)): 0)
+        defenseChart.anchor(top: view.topAnchor, leading: view.leadingAnchor, bottom: view.bottomAnchor, trailing: view.trailingAnchor, paddingTrailing: CGFloat(175 - (pokemon.weight / 10 )))
         return view
     }()
     
